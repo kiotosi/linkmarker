@@ -1,9 +1,12 @@
 {
   "extends": "@tsconfig/linkmarker/client.json",
   "compilerOptions": {
-    "outDir": "../../dist-client/"
+    "outDir": "../../dist-client/",
+    "paths": {
+      "@workspace/*": ["./*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["types/**/*.types.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
 
   "references": [{ "path": "./tsconfig.node.json" }]
 }

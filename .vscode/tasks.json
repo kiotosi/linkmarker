@@ -1,0 +1,73 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "promptOnClose": false,
+      "isBackground": true,
+      "icon": {
+        "id": "checklist",
+        "color": "terminal.ansiBlue"
+      },
+      "script": "lint",
+      "problemMatcher": [],
+      "label": "Lint project",
+      "detail": "turbo lint"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "promptOnClose": true,
+      "isBackground": false,
+      "icon": {
+        "id": "symbol-namespace",
+        "color": "terminal.ansiYellow"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "label": "Build project",
+      "detail": "turbo build"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "promptOnClose": true,
+      "isBackground": false,
+      "icon": {
+        "id": "beaker",
+        "color": "terminal.ansiGreen"
+      },
+      "group": "test",
+      "problemMatcher": [],
+      "label": "Test project",
+      "detail": "turbo test"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "promptOnClose": false,
+      "isBackground": false,
+      "icon": {
+        "id": "file-code",
+        "color": "terminal.ansiMagenta"
+      },
+      "problemMatcher": [],
+      "label": "Run developer mode",
+      "detail": "turbo dev"
+    },
+    {
+      "type": "npm",
+      "script": "install",
+      "promptOnClose": true,
+      "isBackground": true,
+      "icon": {
+        "id": "file-symlink-directory",
+        "color": "terminal.ansiBlack"
+      },
+      "group": "none",
+      "problemMatcher": [],
+      "label": "Install dependencies",
+      "detail": "install dependencies from package"
+    }
+  ]
+}

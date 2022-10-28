@@ -27,12 +27,16 @@
     {
       "name": "📦 Jest config",
       "path": "../packages/common-jest"
+    },
+    {
+      "name": "📦 Style reset",
+      "path": "../packages/style-reset"
     }
   ],
   "settings": {
     "files.exclude": {
       "node_modules/": true,
-      "packages/": true
+      "packages/": false, 
     },
   },
   "extensions": {
