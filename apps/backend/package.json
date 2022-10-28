@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsup index.ts -d ../../dist-server",
     "lint": "eslint -c .eslintrc.cjs . --ext .ts",
-    "test": "jest -c ./jest.config.cjs __test__/"
+    "test": "jest -c ./jest.config.cjs __test__/",
+    "dev": "ts-node index.ts"
   },
   "keywords": [
     "linkmarker",

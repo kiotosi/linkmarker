@@ -63,6 +63,7 @@ importers:
 
   apps/frontend:
     specifiers:
+      '@heroicons/vue': ^2.0.12
       '@tsconfig/linkmarker': '*'
       '@types/jest': ^29.2.0
       '@types/linkmarker': '*'
@@ -77,6 +78,7 @@ importers:
       vue: ^3.2.41
       vue-tsc: ^1.0.9
     dependencies:
+      '@heroicons/vue': 2.0.12_vue@3.2.41
       vue: 3.2.41
     devDependencies:
       '@tsconfig/linkmarker': link:../../packages/common-typescript
@@ -670,6 +672,14 @@ packages:
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
     dependencies:
       '@hapi/hoek': 9.3.0
+    dev: false
+
+  /@heroicons/vue/2.0.12_vue@3.2.41:
+    resolution: {integrity: sha512-ypuQl/Wei7BoShO65AdRVikXDaSt6hJBRuKs2pVd/6HvxfEz18oXraH+J5G/QPIwObMEVhMb6nkOs9l3WZv/gA==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.41
     dev: false
 
   /@humanwhocodes/config-array/0.11.6:

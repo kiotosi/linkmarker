@@ -1,0 +1,41 @@
+{
+  "folders": [
+    {
+      "name": "🌳 Root",
+      "path": "../"
+    },
+    {
+      "name": "🚀 Backend",
+      "path": "../apps/backend"
+    },
+    {
+      "name": "🌈 Frontend",
+      "path": "../apps/frontend"
+    },
+    {
+      "name": "🦆 Types",
+      "path": "../packages/common-types"
+    },
+    {
+      "name": "📦 ESLint config",
+      "path": "../packages/common-eslint"
+    },
+    {
+      "name": "📦 Typescript config",
+      "path": "../packages/common-typescript"
+    },
+    {
+      "name": "📦 Jest config",
+      "path": "../packages/common-jest"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules/": true,
+      "packages/": true
+    },
+  },
+  "extensions": {
+    "recommendations": ["Gruntfuggly.todo-tree", "EditorConfig.EditorConfig", "Vue.volar", "syler.sass-indented"]
+  }
+}
