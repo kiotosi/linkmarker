@@ -3,7 +3,7 @@
 ## Frontend
 ### UI
 - [ ] Implement sidebar
-  - [ ] Implement navigation _\[SidebarNavigation.vue\]_
+  - [x] Implement navigation _\[SidebarNavigation.vue\]_
   - [ ] Implement search _\[SidebarSearch.vue\]_
   - [ ] Implement tag list _\[SidebarTagList.vue\]_
 
@@ -34,10 +34,10 @@
 - [ ] Search
   - [ ] Add ability to search through the link list _\[SidebarSearch.vue\], \[LinkManagerScreen.vue\]_
 
-- [ ] Router
-  - [ ] Add router for main screen _\[LinkManagerScreen.vue\], \[App.vue\]_
-  - [ ] Add router for profile screen _\[ProfileScreen.vue\], \[App.vue\]_
-  - [ ] Add router for about screen _\[AboutScreen.vue\], \[App.vue\]_
+- [x] Router
+  - [x] Add router for main screen _\[LinkManagerScreen.vue\], \[App.vue\]_
+  - [x] Add router for profile screen _\[ProfileScreen.vue\], \[App.vue\]_
+  - [x] Add router for about screen _\[AboutScreen.vue\], \[App.vue\]_
 
 ## Server
   
