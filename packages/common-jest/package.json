@@ -1,0 +1,15 @@
+{
+  "name": "jest-config-linkmarker",
+  "version": "1.0.0",
+  "description": "Common configuration for Jest",
+  "main": "index.cjs",
+  "keywords": [
+    "jest",
+    "linkmarker"
+  ],
+  "author": "Daniil Shilo <crackidocky@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}

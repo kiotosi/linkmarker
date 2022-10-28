@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/linkmarker/server.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "outDir": "../../dist-server"
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+}

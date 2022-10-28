@@ -1,0 +1,11 @@
+{
+  "name": "@tsconfig/linkmarker",
+  "version": "1.0.0",
+  "description": "Common configuration for project",
+  "keywords": ["typescript", "tsconfig", "linkmarker"],
+  "author": "Daniil Shilo <crackidocky@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3"
+  }
+}

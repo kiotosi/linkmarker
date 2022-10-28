@@ -1,0 +1,11 @@
+node_modules
+vite-env.d.ts
+.eslintrc.json
+.eslintrc.cjs
+package.json
+tsconfig*.json
+dist-*
+commitlint.config.js
+jest.config.cjs
+pnpm-*
+*.md

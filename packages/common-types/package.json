@@ -1,0 +1,9 @@
+{
+  "name": "@types/linkmarker",
+  "version": "1.0.0",
+  "description": "Common type definition for project",
+  "types": "index.d.ts",
+  "keywords": ["typescript", "types", "linkmarker"],
+  "author": "Daniil Shilo <crackidocky@gmail.com>",
+  "license": "MIT"
+}
