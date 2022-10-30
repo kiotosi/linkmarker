@@ -1,5 +1,5 @@
 {
-  "name": "linkmarker-frontend",
+  "name": "frontend",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --emptyOutDir",
     "lint": "eslint --fix -c .eslintrc.cjs . --ext .ts,.vue",
     "test": "jest -c ./jest.config.cjs __test__/"
   },

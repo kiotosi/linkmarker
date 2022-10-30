@@ -14,6 +14,11 @@ app.use(errorMiddleware);
 
 const port = process.env['PORT'] || 4000;
 
+// If express should serve directories
+if (process.env['SERVE']) {
+  app.use(express.static(process.env['SERVE_PATH'] || '../../dist/'));
+}
+
 const server = app.listen(port, () => {
   console.log('Backend started on port: ' + port);
 });

@@ -1,13 +1,17 @@
 {
-  "name": "linkmarker-backend",
+  "name": "backend",
   "version": "1.0.0",
   "description": "Backend for linkmarker",
   "main": "../../dist-server/index.js",
   "scripts": {
-    "build": "tsup index.ts -d ../../dist-server",
     "lint": "eslint --fix -c .eslintrc.cjs . --ext .ts",
     "test": "jest -c ./jest.config.cjs __test__/",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon index.ts",
+    "serve": "ts-node --esm index.ts",
+
+    "env-dev": "cp env/dev.env .env",
+    "env-docker": "cp env/docker.env .env",
+    "env-prod": "cp env/prod.env .env"
   },
   "keywords": [
     "linkmarker",

@@ -1,4 +1,5 @@
 node_modules
-dist-*
+dist*
 .turbo
 .DS_Store
+.env

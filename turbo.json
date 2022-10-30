@@ -1,9 +1,10 @@
 {
   "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["apps/backend/.env"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist-server/**", "dist-client/**"]
+      "outputs": ["dist/**"]
     },
     "test": {
       "outputs": [],
@@ -14,6 +15,9 @@
       "outputMode": "full"
     },
     "dev": {
+      "cache": false
+    },
+    "serve": {
       "cache": false
     }
   }

@@ -10,7 +10,8 @@
     "test": "turbo test",
     "lint": "turbo lint",
     "format-stage": "pretty-quick --staged",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "serve": "turbo serve"
   },
   "keywords": [
     "linksaver",
