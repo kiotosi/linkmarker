@@ -28,3 +28,14 @@ h6,
 p {
   margin: 0;
 }
+
+code {
+  display: inline-block;
+  font-size: 14px !important;
+  padding: 2px 4px;
+  background-color: whitesmoke;
+  color: indianred;
+  border-radius: 4px;
+  line-height: 120%;
+  margin: 0 4px;
+}

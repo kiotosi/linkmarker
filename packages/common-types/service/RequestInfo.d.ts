@@ -5,8 +5,7 @@ export namespace RequestInfo {
     export interface Request {
       url: string;
     }
-    export interface Response extends LinkPreview {
-      id: number;
-    }
+    export type Response = LinkPreview;
+    export type StatusCode = 422 | 400 | 200;
   }
 }

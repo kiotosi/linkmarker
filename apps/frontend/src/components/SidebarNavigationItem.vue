@@ -18,7 +18,10 @@ defineProps<SidebarNavigationItemProps>();
         class="sidebar-navigation-item"
         :class="{ 'sidebar-navigation-item_active': isActive }"
       >
-        <component :is="icon" class="sidebar-navigation-item__icon" />
+        <component
+          :is="icon"
+          class="sidebar-navigation-item__icon"
+        />
         <span class="sidebar-navigation-item__text">
           {{ title }}
         </span>
@@ -30,6 +33,7 @@ defineProps<SidebarNavigationItemProps>();
 <style scoped lang="scss">
 .sidebar-navigation-item {
   display: flex;
+  width: 217px;
   align-items: center;
   padding: 9px 10px;
   color: var(--color-basic-12);
