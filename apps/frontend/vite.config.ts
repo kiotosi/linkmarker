@@ -12,7 +12,7 @@ config();
 const getExpressAddress = () =>
   `http://localhost:${process.env['PORT'] || 4000}`;
 
-const expressApi: string[] = ['/meta'];
+const expressApi: string[] = ['/api/meta'];
 const proxyOptions: Record<string, ProxyOptions> = {};
 
 expressApi.forEach(uri => {
@@ -51,6 +51,6 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../../dist',
+    outDir: 'dist/',
   },
 });

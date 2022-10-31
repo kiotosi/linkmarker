@@ -9,18 +9,19 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use('/meta', metaRouter);
+app.use('/api/meta', metaRouter);
 app.use(errorMiddleware);
 
 const port = process.env['PORT'] || 4000;
 
-// If express should serve directories
-if (process.env['SERVE']) {
-  app.use(express.static(process.env['SERVE_PATH'] || '../../dist/'));
+if (process.env['ENV'] === 'DOCKER') {
+  app.use(express.static(process.env['SERVE_PATH'] || '../frontend/dist/'));
 }
 
-const server = app.listen(port, () => {
-  console.log('Backend started on port: ' + port);
-});
+if (process.env['SERVE']) {
+  const server = app.listen(port, () => {
+    console.log('Backend started on port: ' + port);
+  });
 
-server.timeout = 5000;
+  server.timeout = 5000;
+}

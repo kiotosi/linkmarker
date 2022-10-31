@@ -38,6 +38,8 @@ const isValid = computed(() => {
  * @param name Name of the tag
  */
 function addTag(name: string): void {
+  name = name.toLowerCase();
+
   const foundedTag = tagList.value.find(tag => tag.name === name);
 
   if (foundedTag && currentLinkItem.value) {
@@ -66,9 +68,7 @@ function addTag(name: string): void {
 <template>
   <ModalMain @close="$emit('close')">
     <div class="modal-add-tag">
-      <div class="modal-add-tag__header">
-        Add tag
-      </div>
+      <div class="modal-add-tag__header">Add tag</div>
       <div class="model-add-tag__input input">
         <span class="input__tag">#</span>
         <input
@@ -77,7 +77,7 @@ function addTag(name: string): void {
           spellcheck="false"
           type="text"
           class="input__text"
-        >
+        />
       </div>
       <button
         class="modal-add-tag__accept"

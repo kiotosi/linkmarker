@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/linkmarker/client.json",
   "compilerOptions": {
-    "outDir": "../../dist/",
+    "outDir": "dist/",
     "paths": {
       "@workspace/*": ["./*"]
     }

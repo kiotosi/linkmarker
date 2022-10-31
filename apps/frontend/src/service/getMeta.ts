@@ -9,7 +9,7 @@ export default async function getMeta(
     url,
   };
 
-  const response = await fetch('/meta', {
+  const response = await fetch('/api/meta', {
     body: JSON.stringify(body),
     method: 'POST',
     headers: {

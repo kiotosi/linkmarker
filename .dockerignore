@@ -1,2 +1,37 @@
-.env
-node_modules
+# flyctl launch added from .gitignore
+**/node_modules
+**/dist*
+**/.turbo
+**/.DS_Store
+**/.env
+# Local Netlify folder
+**/.netlify
+
+# flyctl launch added from .husky/_/.gitignore
+.husky/_/**/*
+
+# flyctl launch added from apps/frontend/.gitignore
+# Logs
+apps/frontend/**/logs
+apps/frontend/**/*.log
+apps/frontend/**/npm-debug.log*
+apps/frontend/**/yarn-debug.log*
+apps/frontend/**/yarn-error.log*
+apps/frontend/**/pnpm-debug.log*
+apps/frontend/**/lerna-debug.log*
+
+apps/frontend/**/node_modules
+apps/frontend/**/dist
+apps/frontend/**/dist-ssr
+apps/frontend/**/*.local
+
+# Editor directories and files
+!apps/frontend/**/.vscode/extensions.json
+apps/frontend/**/.idea
+apps/frontend/**/.DS_Store
+apps/frontend/**/*.suo
+apps/frontend/**/*.ntvs*
+apps/frontend/**/*.njsproj
+apps/frontend/**/*.sln
+apps/frontend/**/*.sw?
+apps/frontend/**/.turbo

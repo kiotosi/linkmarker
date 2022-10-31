@@ -22,9 +22,9 @@ module.exports = {
     '.vscode',
     'jest.config.cjs',
     '.eslintrc.cjs',
+    'dist',
   ],
   rules: {
-    indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
   },
 };
